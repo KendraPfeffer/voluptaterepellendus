@@ -1,0 +1,39 @@
+{
+  "name": "voluptaterepellendus",
+  "version": "1.0.0",
+  "description": "A simple CLI for querying contract information from block-explorers",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KendraPfeffer/voluptaterepellendus.git"
+  },
+  "keywords": [
+    "eos",
+    "etherscan",
+    "nisi",
+    "libero",
+    "cli"
+  ],
+  "author": "JerelCruickshank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KendraPfeffer/voluptaterepellendus.git/issues"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "docopt": "^0.6.2",
+    "dotenv": "^16.0.0"
+  },
+  "bin": {
+    "ethscan": "./src/cli.js"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "prettier --list-different 'src/*.{js,jsx,ts,tsx}' '*.{js,json}'",
+    "fix": "prettier --write 'src/*.{js,jsx,ts,tsx}' '*.{js,json}'"
+  }
+}
